@@ -36,6 +36,7 @@ public class HelloWorld {
 		int hiney2 = Integer.parseInt(hiney);
 
 		System.out.println("Github Test");
+		System.out.println("IntelliJ Test");
 		
 	}
 
