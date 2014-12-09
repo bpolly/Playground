@@ -39,6 +39,7 @@ public class HelloWorld {
 		System.out.println("IntelliJ Test");
 		System.out.println("IntelliJ Test 2");
 		System.out.println("Pull Test");
+		System.out.println("Pull Test confirmed");
 		
 	}
 
