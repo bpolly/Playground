@@ -37,6 +37,7 @@ public class HelloWorld {
 
 		System.out.println("Github Test");
 		System.out.println("IntelliJ Test");
+		System.out.println("IntelliJ Test 2");
 		
 	}
 
