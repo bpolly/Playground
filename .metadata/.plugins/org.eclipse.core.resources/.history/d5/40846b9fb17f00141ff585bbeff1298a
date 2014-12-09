@@ -35,7 +35,6 @@ public class HelloWorld {
 		System.out.println("Hiney: " + hiney);
 		int hiney2 = Integer.parseInt(hiney);
 
-		System.out.println("Github Test");
 		
 	}
 
