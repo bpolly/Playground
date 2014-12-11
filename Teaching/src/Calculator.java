@@ -12,21 +12,28 @@ public class Calculator {
          */
         getInput();
 
-        int number1 = num1;
-        int number2 = num2;
+        //int number1 = num1;
+        //int number2 = num2;
         /*
         Detect which operand was used.
          */
         double result=0;
         switch (operand){
             case '+':
-                result = add(number1, number2);
+                result = add(num1, num2);
+                break;
             case '-':
-                result = subtract(number1, number2);
+                result = subtract(num1, num2);
+                break;
             case '*':
-                result = multiply(number1, number2);
+                result = multiply(num1, num2);
+                break;
             case '/':
-                result = divide(number1, number2);
+                result = divide(num1, num2);
+                break;
+            default:
+                result = add(num1, num2);
+                break;
         }
         System.out.println(result);
 
@@ -44,25 +51,21 @@ public class Calculator {
      * SUBTRACTION METHOD
      */
     static double subtract(int x1, int x2){
-        // FILL IN
-        // METHOD
-        // HERE
-        return 0; // Delete this line
+       double difference = x1 - x2;
+        return difference;
     }
     /*
      * MULTIPLICATION METHOD
      */
     static double multiply(int x1, int x2){
-        // FILL IN
-        // METHOD
-        // HERE
-        return 0; // Delete this line
+        double product = x1 * x2;
+        return product;
     }
     /*
      * DIVISION METHOD
      */
     static double divide(int x1, int x2){
-        double quotient = x1 / x2;
+        double quotient = (x1 * 1.0) / x2;
         return quotient;
     }
 
@@ -92,5 +95,6 @@ public class Calculator {
         String num2S = calculation.substring(posOfSpace+3, calculation.length());
         num1 = Integer.parseInt(num1S);
         num2 = Integer.parseInt(num2S);
+
     }
 }
